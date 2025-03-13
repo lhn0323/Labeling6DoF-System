@@ -1,0 +1,46 @@
+{
+    "camera": {
+        "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.41,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "position": [
+            0,
+            0,
+            1.41
+        ],
+        "focalPoint": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "fov": 39.05,
+        "viewup": [
+            0.0,
+            1.0,
+            0.0
+        ],
+        "distance": 1.41
+    },
+    "model": {
+        "initial_position": -30.0,
+        "max_position": 0.0,
+        "position_accuracy": 5,
+        "size_accuracy": 2,
+        "scaling_factor": 0.1
+    }
+}

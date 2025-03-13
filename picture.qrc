@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource prefix="/">
+    <file>school.jpg</file>
+    <file>calibration.png</file>
+
+</qresource>
+</RCC>
+

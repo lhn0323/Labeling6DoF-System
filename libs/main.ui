@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1535</width>
+    <height>935</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="SLabel3DAnnotation" name="vtk_panel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>600</width>
+          <height>600</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1535</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuExport">
+     <property name="title">
+      <string>Export</string>
+     </property>
+     <addaction name="actionKITTI"/>
+    </widget>
+    <addaction name="action_Load_Scenes"/>
+    <addaction name="action_Save_Scenes"/>
+    <addaction name="separator"/>
+    <addaction name="menuExport"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionHome"/>
+    <addaction name="actionEnd"/>
+    <addaction name="actionPrevious"/>
+    <addaction name="actionNext"/>
+    <addaction name="action_Delete_Model"/>
+    <addaction name="separator"/>
+    <addaction name="actionRoateX"/>
+    <addaction name="actionRoateX_M"/>
+    <addaction name="actionRoateY"/>
+    <addaction name="actionRoateY_M"/>
+    <addaction name="actionRoateZ"/>
+    <addaction name="actionRoateZ_M"/>
+    <addaction name="separator"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actioncopy_scene"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionkitti_2_labelimg3D"/>
+   </widget>
+   <widget class="QMenu" name="menuConfig">
+    <property name="title">
+     <string>Config</string>
+    </property>
+    <addaction name="actionSystem_Config"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <widget class="QMenu" name="menuAuthors">
+     <property name="title">
+      <string>Authors</string>
+     </property>
+     <addaction name="actionHaonan_Liu"/>
+     <addaction name="actionCongliang_Li"/>
+     <addaction name="actionShijie_Sun"/>
+     <addaction name="actionHongLi_Hu"/>
+    </widget>
+    <addaction name="menuAuthors"/>
+    <addaction name="separator"/>
+    <addaction name="actionLicense"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuConfig"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Load_Scenes">
+   <property name="text">
+    <string>&amp;Load Scenes</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Save_Scenes">
+   <property name="text">
+    <string>&amp;Save Scenes</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="text">
+    <string>Home</string>
+   </property>
+   <property name="shortcut">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionEnd">
+   <property name="text">
+    <string>End</string>
+   </property>
+   <property name="shortcut">
+    <string>End</string>
+   </property>
+  </action>
+  <action name="actionPrevious">
+   <property name="text">
+    <string>Previous</string>
+   </property>
+   <property name="shortcut">
+    <string>1</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="text">
+    <string>Next</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="action_Delete_Model">
+   <property name="text">
+    <string>&amp;Delete Model</string>
+   </property>
+   <property name="shortcut">
+    <string>X</string>
+   </property>
+  </action>
+  <action name="actionRoateX">
+   <property name="text">
+    <string>RoateX+</string>
+   </property>
+   <property name="shortcut">
+    <string>W</string>
+   </property>
+  </action>
+  <action name="actionRoateX_M">
+   <property name="text">
+    <string>RoateX-</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="actionRoateY">
+   <property name="text">
+    <string>RoateY+</string>
+   </property>
+   <property name="shortcut">
+    <string>E</string>
+   </property>
+  </action>
+  <action name="actionRoateY_M">
+   <property name="text">
+    <string>RoateY-</string>
+   </property>
+   <property name="shortcut">
+    <string>Q</string>
+   </property>
+  </action>
+  <action name="actionRoateZ">
+   <property name="text">
+    <string>RoateZ+</string>
+   </property>
+   <property name="shortcut">
+    <string>A</string>
+   </property>
+  </action>
+  <action name="actionRoateZ_M">
+   <property name="text">
+    <string>RoateZ-</string>
+   </property>
+   <property name="shortcut">
+    <string>D</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionLabelImg3D">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>LabelImg3D</string>
+   </property>
+  </action>
+  <action name="actionKITTI">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>KITTI</string>
+   </property>
+  </action>
+  <action name="actionkitti_2_labelimg3D">
+   <property name="text">
+    <string>kitti-&gt;6DoF</string>
+   </property>
+   <property name="text">
+    <string>rope3d-&gt;kitti</string>
+   </property>
+  </action>
+  <action name="actionSystem_Config">
+   <property name="text">
+    <string>System Config</string>
+   </property>
+  </action>
+  <action name="actioncopy_scene">
+   <property name="text">
+    <string>Copy_Scene</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Space</string>
+   </property>
+  </action>
+  <action name="actionLicense">
+   <property name="text">
+    <string>License</string>
+   </property>
+  </action>
+  <action name="actionHaonan_Liu">
+   <property name="text">
+    <string>Haonan liu</string>
+   </property>
+  </action>
+  <action name="actionCongliang_Li">
+   <property name="text">
+    <string>Congliang Li</string>
+   </property>
+  </action>
+  <action name="actionShijie_Sun">
+   <property name="text">
+    <string>Shijie Sun</string>
+   </property>
+  </action>
+  <action name="actionHongLi_Hu">
+   <property name="text">
+    <string>HongLi Hu</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SLabel3DAnnotation</class>
+   <extends>QFrame</extends>
+   <header location="global">libs.slabel3dannotation</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
