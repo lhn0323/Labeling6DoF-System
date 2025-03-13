@@ -1,9 +1,9 @@
 ## Dataset
 
-This is a dataset named [CarlaRoad3D](ghttps://huggingface.co/datasets/haonanmi/CarlaRoad3D/upload/main)
+This is a dataset named [CarlaRoad3D](https://huggingface.co/datasets/haonanmi/CarlaRoad3D/upload/main)
 ### Steps
 1. Build and launch using the instructions above.
-2. Click 'Load Scenes' in Menu/File, and choose the scene folder as [Data Preparation](#data).
+2. Click 'Load Scenes' in Menu/File
 3. Click 'System Config' in Menu/Config.
 4. Click "camera" at System_config Page, and set the FOV to the field of view of the camera taking the scene images. 
 5. Click "model" at System_config page, and you can set the initial position, max position, position accuracy, size accuracy, scaling factor of the model.
